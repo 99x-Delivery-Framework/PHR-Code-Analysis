@@ -5,6 +5,8 @@ The provided bash script can perform the analysis and generate the reports in on
 
 ## Concerns with .NET projects
 
+- The normal SonarQube CLI scanner doesnt work with .NET projects, hence the `dotnet-sonarscanner` nuget package has been utilized in this version of the script to support .NET project.
+- The .NET scanner will analyze one project thats pointed to a single solution file (.sln). It will build the project first and then perform the analysis.
 - The SonarQube CNES report plugin doesn't work well with .NET projects and doesnt generate proper reports.
 - To circumvent this issue a custom plugin was developed to communicate with the SonarQube API to dump the list of issues as two extra CSV files.
 - `./sonardotnetreport` folder contains the Java project responsible for generating said reports. A decision was made to use Java since the script anyways requires Java and it didnt make sense to ask users to install further prerequisites.
