@@ -8,6 +8,7 @@ The provided bash script can perform the analysis and generate the reports in on
 - The SonarQube CNES report plugin doesn't work well with .NET projects and doesnt generate proper reports.
 - To circumvent this issue a custom plugin was developed to communicate with the SonarQube API to dump the list of issues as two extra CSV files.
 - `./sonardotnetreport` folder contains the Java project responsible for generating said reports. A decision was made to use Java since the script anyways requires Java and it didnt make sense to ask users to install further prerequisites.
+- Please export the Java project as a Runnable JAR file if there are any changes made to the plugin, and name the jar file as `sonardotnetreport.jar`. Also ensure the jar file is in the same folder as the script file.
 
 
 # Prerequisites
