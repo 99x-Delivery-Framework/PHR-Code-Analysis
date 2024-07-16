@@ -17,7 +17,7 @@ https://docs.sonarsource.com/sonarqube/9.9/user-guide/rules/overview/
 
 ### Code Quality Measures from Reports
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 - From the given reports, Code Security and Code Bug Issues can be separated directly. 
 - Code Churn and Code Documentation cannot be measured from the given reports. (Can use Jacoco to observe Code Coverage: https://github.com/tkgregory/sonarqube-jacoco-code-coverage/tree/master)  
